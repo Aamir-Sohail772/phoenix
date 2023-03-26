@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/signup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a53f968ed6.js" crossorigin="anonymous"></script>
+  <title>Login</title>
+</head>
+<body>
+  <div id="body">
+   
+
+    <div id="right">
+      <div class="close"><a style="color: grey;" href="index.html"><i class="fa-solid fa-xmark"></i></a></div>
+      <div><h1 class="grey">Login</h1></div>
+      <div><p class="grey">Please enter your registered email id and password</p></div>
+      <div id="form">
+        <input type="email" id="email" placeholder="Enter Email"><br>
+        <input type="password" id="password" placeholder="Enter password"><br>
+        <div class="btn-box"><button id="button">Login</button></div>
+        <p id="alert"></p>
+      </div>
+      <div class="extra"><p>New to Corretto?</p><a href="signup.html">Sign up</a></div>
+      <div class="extra"><p>Have corporate account? </p><a href=""> Click Here</a></div>
+      <div class="extra"><a href="">Need Help ?</a></div>
+
+      <div class="footer">
+        <p>By signing up, you agree to our</p>
+        <a href="">Terms and conditions</a> & <a href="">Privacy Policy</a>
+      </div>
+      
+    </div>
+</body>
+</html>
+<script>
+   document.querySelector("button").addEventListener("click", mylogin)
+    var regusers = JSON.parse(localStorage.getItem("regdata")) || []
+
+    function mylogin(){
+        var email = document.querySelector("#email").value
+        var password = document.querySelector("#password").value
+
+        for(var i=0; i<regusers.length; i++){
+            if(regusers[i].regemail == email && regusers[i].regpass == password){
+                var alt = document.getElementById("alert")
+                alt.innerText = "Login Success"
+                alt.style.color = "green"
+                document.getElementById("button").innerText = "Redirecting..."
+                window.location.href = "product.html"
+                break;
+            }else{
+                var alt = document.getElementById("alert")
+                alt.innerText = "Login failed: Wrong credentials."
+                alt.style.color = "red"
+                document.querySelector("#email").value = ""
+                document.querySelector("#password").value = ""
+            }
+        }
+    }
+</script>
+<script src="./js/slide.js"></script>
