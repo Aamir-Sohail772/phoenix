@@ -1,0 +1,104 @@
+      /* Set background color to dark night */
+      body {
+        background-color: #141414;
+      }
+      /* Style the h1 tag */
+      h1{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-weight: bolder;
+      }
+      
+      /* Center align the container */
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px;
+      }
+      
+      /* Style for the main section */
+      .main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+      }
+      
+      /* Style for the left image section */
+      .left img {
+        width: 100%;
+        border-radius: 30%;
+      }
+      
+      /* Style for the right text section */
+      .right {
+        width: 50%;
+        color: white;
+        margin-left:20px;
+      }
+      
+      /* Style for the secondary section */
+      .secondary {
+        clear: both;
+        color: white;
+      }
+      
+      /* Style for headings */
+      h1, h3 {
+        color: white;
+      }
+      
+      /* Style for paragraphs */
+      p {
+        color: white;
+        line-height: 1.5;
+      }
+      
+      
+      
+       /* For screens with a maximum width of 767px */
+      @media (max-width: 767px) {
+        /* Change the flex direction to column */
+        .main {
+          flex-direction: column;
+          align-items: stretch;
+        }
+        /* Adjust the width of the right section */
+        .right {
+          width: 100%;
+          margin-left: 12.5px;
+        }
+      }
+      
+      /* For screens with a minimum width of 768px */
+      @media (min-width: 768px) {
+        /* Change the container padding */
+        .container {
+          padding: 50px 100px;
+        }
+      }
+      
+      /* For screens with a minimum width of 992px */
+      @media (min-width: 992px) {
+        /* Change the container max width */
+        .container {
+          max-width: 1200px;
+        }
+      }
+      
+      /* For screens with a minimum width of 1200px */
+      @media (min-width: 1200px) {
+        /* Adjust the container padding */
+        .container {
+          padding: 50px 150px;
+        }
+        /* Adjust the width of the right section */
+        .right {
+          width: 60%;
+          margin-left: 12.5px;
+        }
+      }
+      
+       
