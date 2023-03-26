@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    /* background: linear-gradient(90deg,#b48484 0%,#b48484 30%, 
+#2c2525 30%,#2c2525 100% ); */
+    background: linear-gradient(90deg,#c49b63 0%,#c49b63 30%, 
+#000 30%,#000 100% );
+}
+.contactUs{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.contactUs .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.contactUs .title h2{
+    color: #fff;
+    /* color: #c49b63; */
+    font-weight: 500;
+}
+
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+}
+.contact{
+    padding: 40px;
+    /* background: #c28888e7; */
+    background: #c49b63;
+    box-shadow: 0 5px rgba(0,0,0,0.15);
+    border-radius: 12px;
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas:
+    "form info"
+    "form map";
+    grid-gap: 20px;
+}
+.contact h3{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* Form */
+.formBox{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50{
+    display: flex;
+    gap: 20px;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width:50%
+}
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+.inputBox span{
+    /* color: gold; */
+    color:#fff;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.inputBox input{
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    border:  1px solid gold;
+}
+.inputBox textarea{
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    border:  1px solid gold;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+.inputBox input[type="submit"]{
+    background: black;
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.inputBox ::placeholder{
+    /* color: #b48484; */
+    color: goldenrod;
+}
+
+/* info */
+.info{
+    /* background: #bd4d4d; */
+    background: #c49b63;
+    border-radius: 12px;
+}
+.info h3{
+    color: #fff;
+}
+.info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info .infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    color: goldenrod;
+    background: #2c2525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.info .infoBox div p{
+    color:#fff;
+    font-size: 1.1em;
+}
+.info .infoBox div a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.sci{
+    margin-top: 40px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+.sci li a{
+    color: goldenrod;
+    background: black;
+    padding-top:6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 100%;
+    font-size: 2em;
+}
+.sci li a:hover{
+    color: #fff;
+}
+.map{
+    padding: 0px;
+}
+.map iframe{
+   width: 100%;
+   height: 100%;
+}
+
+
+/* Responsive Design */
+@media (max-width: 991px){
+    body{
+        /* background: #b48484; */
+        background: #000;
+    }
+    .contactUs{
+        padding: 20px;
+    }
+    .box{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "form"
+            "info"
+            "map";
+    }
+    .map{
+    min-height:300px;
+    }
+    .formBox .row50{
+        display: flex;
+        gap:0;
+        flex-direction: column;
+    }
+    .inputBox{
+        /* display: flex;
+        flex-direction: column;
+        margin-bottom: 10px; */
+        width: 100%;
+    }
+    .contact{
+        padding: 30px;
+    }
+    .map{
+        min-height:300px;
+        padding: 0px;
+        }
+}
