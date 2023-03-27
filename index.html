@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee House</title>
+
+    <!-- link of style sheet threre............. -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font of giving style in wording -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Great+Vibes&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<!--swiper API use because of images randomly change  -->
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+  <!-- using 3 lines font for mobile look  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" >
+</head>
+<body>
+
+<!-- container for whole Parent -->
+
+    <!-- Navigation -->
+    <nav class="navbar">
+<!-- first div for LOGO or mena usme logo bhi diya font awsome wbsite ki madad se or Nav ke andar -->
+        <div class="logo">
+            <!-- use  i icon for mug symbol using website name https://fontawesome.com/search?q=%3Ci%20class%3D%22fa-solid%20fa-cart-shopping%22%3E&o=r -->
+            <i class="fa-solid fa-mug-saucer"></i>
+            <div class="logo-text">
+                <span>coffee</span>
+                <span>House</span>
+            </div>
+        </div>
+
+        <!-- second div start for ancor  -->
+
+      
+
+        <div class="navigation" id="mobile-response">
+        <!-- copy down using shift alt down arrow -->
+       
+        
+        <a href="#" class="navbar-list">Home</a>
+        <a href="./Menu/menu.html" class="navbar-list">Menu</a>
+        <a href="blog.html" class="navbar-list">Blog</a>
+        <a href="about.html" class="navbar-list">About</a>
+        <a href="shop.html" class="navbar-list">Shop</a>
+        <a href="contact.html" class="navbar-list">Contact</a>
+    
+        <!-- use  i icon for shpping symbol using website name https://fontawesome.com/v6/icons/cart-shopping?s=solid&f=classic -->
+        <!-- <a href="#"><i class="fa-solid fa-cart-shopping"></i></a> -->
+    </div>
+
+    <div class="navright1">
+        <a href="login.html" class="navbar-list">Login</a>
+        <a href="signup.html" class="navbar-list">Sign Up</a>
+        <a href="cart.html" class="navbar-list"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+</div>
+
+<!-- <div class="mobile-navbar-btn">
+    <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+    <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+  </div> -->
+
+    </nav>
+    <!-- end of navigation -->
+
+
+
+    <!-- Landing -->
+    <!-- for content of write in middle -->
+    <section class="landing">
+        <div class="banner">
+            <h3 class="main-heading">Welcome</h3>
+            <h1>Amazing Taste & Beautiful Place</h1>
+            <p>Beautiful places are almost alive! When you visit them, you can feel their breaths!</p>
+            <button class="banner-btn banner-btn-1"  onclick="window.location.href = 'shop.html';">Order Now</button>
+            <button class="banner-btn banner-btn-2"  onclick="window.location.href = './Menu/menu.html';">View Menu</button>
+        </div>
+
+<!-- for background images -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">      
+                    <img src="images/home-1-slider-image-1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/home-1-slider-image-2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/home-1-slider-image-3.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="landing-contact">
+
+            <div class="details">
+                <!-- its also symbol of phone website given upper of comment -->
+                <i class="fa-solid fa-phone"></i>
+            <div>
+            <span>+91(0571)796821</span>
+            <span> Contact-us & Home Delivery</span>
+        </div>
+    </div>
+    <div class="details">
+        <!-- its also symbol of phone website given upper of comment -->
+        <i class="fa-solid fa-location-dot"></i>
+    <div>
+    <span>123 Main Street</span>
+    <span>203 centre point ,Ramghat Ghat Road,Aligarh,INDIA</span>
+</div>
+</div>
+<div class="details">
+    <!-- its also symbol of phone website given upper of comment -->
+    <i class="fa-solid fa-clock"></i>
+<div>
+<span>Open Monday-Sunday</span>
+<span>please Join us, We are Available---8:00am-9:00pm</span>
+</div>
+</div>
+</div>
+    </section>
+    <!-- end of landing -->
+
+
+    <!-- About -->
+    <section class="about">
+        <div>
+            <!-- this mobile icon use for fontawsome.com -->
+            <i class="fa-solid fa-mobile"></i>
+            <h1>Easy to Order</h1>
+            <p>Do the difficult things while they are easy and do the great things while they are small. A journey of a thousand miles must begin with a single step.</p>
+        </div>
+        <div>
+            <!-- this mobile icon use for fontawsome.com -->
+            <i class="fa-solid fa-truck"></i>
+            <h1>Faster Delivery</h1>
+            <p>When it comes to delivering our raw coffee to you, we have a number of different ways for you to receive our coffee delivery.</p>
+        </div>
+        <div>
+            <!-- this mobile icon use for fontawsome.com -->
+            <i class="fa-solid fa-mug-hot"></i>
+            <h1>Quality coffee</h1>
+            <p>Quality means doing it right when no one is looking. We have best Quality of raw Coffee</p>
+        </div>
+    </section>
+    <!-- End of About -->
+
+    <!-- Menu -->
+    <section class="menu">
+
+        <div class="menu-left">
+            <h3 class="main-heading">Discover</h3>
+            <h1>Our Menu</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis culpa provident maiores quae veniam obcaecati explicabo ea similique doloribus dicta?</p>
+
+            <button type="button" class="menu-btn"  onclick="window.location.href = 'menu.html';">View Full Menu</button>
+
+        </div>
+
+        <div class="menu-right">
+        <div class="menu-right-images">
+            <div class="menu-img-wrapper">
+                <img src="images/image4.jpg">
+            </div>
+            <div class="menu-img-wrapper">
+                <img src="images/image5.jpg">
+            </div>
+            <div class="menu-img-wrapper">
+                <img src="images/image6.jpg">
+            </div>
+            <div class="menu-img-wrapper">
+                <img src="images/image7.jpg">
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- End of Menu -->
+
+<!-- Data -->
+<section class="data">
+    <div>
+        <div class="icon-wrapper">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span class="icon-bg"></span>
+        </div>
+        <span class="num" data-val="350">
+            0
+        </span>
+        <span class="info">Coffee Branches</span>
+    </div>
+
+    <div>
+        <div class="icon-wrapper">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span class="icon-bg"></span>
+        </div>
+        <span class="num" data-val="90">
+            
+        </span>
+        <span class="info">Number of Awards</span>
+    </div>
+
+    <div>
+        <div class="icon-wrapper">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span class="icon-bg"></span>
+        </div>
+        <span class="num" data-val="2540">
+            
+        </span>
+        <span class="info">Happy Customers</span>
+    </div>
+
+    <div>
+        <div class="icon-wrapper">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span class="icon-bg"></span>
+        </div>
+        <span class="num" data-val="750">
+            
+        </span>
+        <span class="info">Staff</span>
+    </div>
+</section>
+<!-- End of Data -->
+
+<!-- Customer -->
+<section class="customers">
+    <div class="customer-banner">
+        <h3 class="main-heading">Testimony</h3>
+        <h1>Customer Say</h1>
+        <p>How are you? I’m writing to ask if you’d be comfortable providing us with a brief testimonial for our new website. We’d love to feature your experience with our product.</p>
+    </div>
+    <div class="clients">
+
+        <div class="client">
+            <p>I visted a coffee house and was pleasantly surprised by the cozy atmosphere and friendly staff. The coffee was delicious and the pastries were fresh and tasty. The shop also had a great selection of loose leaf teas and the baristas were knowledgeable about the different varieties.</p>
+            <div>
+                <img src="images/client2.jpg" >
+                <span>Pranav Bhardwaj</span>
+            </div>
+        </div>
+        <div class="client">
+            <p> I recently tried Espresso and was disappointed with my experience. The coffee was mediocre and the service was slow. The seating area was cramped and uncomfortable, with limited options for working or studying. The pastry selection was also lacking, with only a few stale options available. </p>
+            <div>
+                <img src="images/client3.jpg" >
+                <span>Chandan singh</span>
+            </div>
+        </div>
+        <div class="client">
+            <p>The coffee is consistently delicious and the baristas are friendly and skilled. I recently tried Espresso and was gorgeous with my experience. The coffee was amazing and the service was good. The seating area was comfortable.
+            </p>
+            <div>
+                <img src="images/client4.jpg" >
+                <span>Raji Dixit</span>
+            </div>
+        </div>
+        <div class="client">
+            <p>The seating area was comfortable and there was free Wi-Fi, which was a bonus. Overall, I highly recommend The Daily Grind for anyone looking for a great cup of coffee and a welcoming environment.</p>
+            <div>
+                <img src="images/client5.jpg" >
+                <span>Somya Vashishtha</span>
+            </div>
+        </div>
+        <div class="client">
+            <p> This coffee house is great place because it is suitable options for working or studying and also there is nice and calm place .I am enjoying when i worked in that place such a nice services and nice place .</p>
+            <div>
+                <img src="images/client1.jpg" >
+                <span>Kamal Kant sharma</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  End of Customer -->
+
+<!-- Contact -->
+<section class="contact">
+    <div class="contact-left"></div>
+    <div class="contact-right">
+        <Form>
+            <h1>Book a Table</h1>
+            <div class="input-group">
+                <input type="text" placeholder="First Name">
+           
+                <input type="text" placeholder="Last Name">
+            </div>
+            <div class="input-group">
+                <input type="email" placeholder="Email Address">
+           
+                <input type="text" placeholder="Phone">
+            </div>
+            <div class="input-group">
+                <textarea placeholder="Message"></textarea>
+       <button type="button" class="contact-btn" onclick="window.location.href = 'login.html';">Appointment</button>
+            </div>
+        </Form>
+    </div>
+</section>
+<!-- End of Contact -->
+
+<!-- Footer -->
+<footer>
+    <p class="copyright">
+        &copy;All Rights Reserved.2023.Made by Vashishtha 
+    </p>
+</footer>
+<!-- End of Footer -->
+
+
+</div>
+<!-- Ending of container whole parent -->
+
+
+ <!-- ======================================== 
+          Our JavaScript Section Start  
+    ========================================  -->
+
+
+
+<!-- use API for image randomly change  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- add js file -->
+    <script src="script.js"></script>
+  
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+   
+    
+</body>
+</html>
